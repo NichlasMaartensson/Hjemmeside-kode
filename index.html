@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Vi indsætter mqtt.js så vi kan arbejde med mqtt -->
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    
+    <!-- Vi indsætter p5.js så vi kan arbejde med p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title> Wheel Of Misfortune </title>
+    <link href="https://www.dafontfree.net/embed/Z2lsbC1zYW5zLXVsdHJhLWJvbGQtcmVndWxhciZkYXRhLzI1L2cvMTI3MjQ3L0dpbGxTYW5zVWx0cmFCb2xkLnR0Zg" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="page show" id="introPage">
+        <h1>Wheel of Misfortune</h1>
+        <img src="./assets/logo1.png" alt="">
+        <button id="startButton">start</button>
+    </div>
+    <div class="page" id="questionPage">
+        <h1>Wheel of Misfortune</h1>
+        <h2 id="questionHeader">Spørgsmål kommer til at være her</h2>
+        <div id="questionOptions">her kommer svarmuligheder</div>
+    </div>
+    <div class="page" id="answerPage">
+        <h1 id="rightOrWrong">Rigtigt eller forkert?</h1>
+        <button id="wheelButton">drej hjulet</button>
+        <button id="nextButton">næste opgave</button>
+    </div>
+    <div class="page" id="wheelPage">
+        <h1>Hjulet drejer </h1>
+        <button id="continueButton">næste spørgsmål</button>
+        <button id="finishButton">slut spil</button>
+    </div>
+    <script src="questions.js"></script>
+
+    <!-- til sidst indsættes link til vores eget javascript -->
+    <script src="main.js"></script>
+
+</body>
+</html>

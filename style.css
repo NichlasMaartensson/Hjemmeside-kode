@@ -1,0 +1,54 @@
+@import url('http://fonts.cdnfonts.com/css/gill-sans-nova-cond-ultra-bold');
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+    font-family: 'Gill Sans Nova Ultra Bold', sans-serif;
+    word-wrap:normal;
+}
+body, html {
+    background-color: rgb(107, 159, 177);
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+.page{
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    background-color: lightblue;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    left:-100vw;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+#questionOptions, #questionHeader, button{
+    font-size:1.2rem;
+}
+.answer{
+    border:1px solid black;
+    margin:.4rem;
+    padding:.4rem;
+    border-radius:8px;
+}
+button{
+    padding:.5rem 1rem;
+    border:6px solid white;
+    color:white;
+    background:none;
+}
+
+.show{
+    left:0;
+}
+
+img{
+    width:250px;
+    height:250px;
+}
